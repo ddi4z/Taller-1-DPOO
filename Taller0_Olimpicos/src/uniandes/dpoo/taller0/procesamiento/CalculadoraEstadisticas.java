@@ -117,11 +117,27 @@ public class CalculadoraEstadisticas
 
 		return resultado;
 	}
+
+
+
+	/**
+	 * Retorna como string el nombre del pais que representa un atleta
+	 * 
+	 * @param nombreAtleta  El nombre del atleta a buscar
+
+	 * @return Un string con el nombre del pais que representa el atleta.
+	 * 
+	 *         Si el nombre no corresponde al de ningún atleta, retorna null.
+	 */
 	
 	public String consultarPais(String nombreAtleta) 
 	{
-		Atleta elAtleta = buscarAtleta(nombreAtleta);
-		String pais = elAtleta.darPais().darNombre();
+		String pais = "No se ha encontrado el pais del atleta";
+		Atleta atleta =buscarAtleta(nombreAtleta);
+		if (atleta != null)
+		{
+			pais = atleta.darPais().darNombre();
+		}
 		return pais;
 	}
 

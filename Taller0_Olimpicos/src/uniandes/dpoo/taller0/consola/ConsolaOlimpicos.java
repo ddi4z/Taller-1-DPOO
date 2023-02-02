@@ -109,7 +109,10 @@ public class ConsolaOlimpicos
 		System.out.println("14. Salir de la aplicación\n");
 	}
 	
-	
+	/**
+	 * Le muestra el usuario el pais que representa un atleta
+	 */
+
 	private void ejecutarConsultarPais() 
 	{
 		System.out.println("\n" + "Pais que representa un atleta" + "\n");
@@ -117,12 +120,6 @@ public class ConsolaOlimpicos
 		String pais = calculadora.consultarPais(atleta_consultar);
 		System.out.println("El pais que representa el atleta es: "+ pais);
 	}
-	
-	
-	
-	
-	
-	
 	
 	
 
